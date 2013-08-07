@@ -48,3 +48,24 @@ function zap_connected_users(){
 		}
 	}
 }
+
+function zap_init_widget_bars(){
+  register_sidebar( array(
+        'name' => 'Accueil à droite (grande colonne)',
+        'id' => 'home_right_1',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="rounded">',
+        'after_title' => '</h2>',
+      ) );
+  register_sidebar( array(
+        'name' => 'À gauche de la page',
+            'id' => 'home_left_1',
+                'before_widget' => '<div>',
+                    'after_widget' => '</div>',
+                        'before_title' => '<h2 class="rounded">',
+                            'after_title' => '</h2>',
+                              ) );
+}
+add_action( 'widgets_init', 'zap_init_widget_bars' );
+}
