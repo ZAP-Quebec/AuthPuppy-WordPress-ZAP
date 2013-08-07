@@ -68,4 +68,3 @@ function zap_init_widget_bars(){
                               ) );
 }
 add_action( 'widgets_init', 'zap_init_widget_bars' );
-}
