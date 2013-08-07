@@ -13,7 +13,7 @@ Author URI: http://sobremarc.com
 License: GPLv2 or later
 */
 
-add_action('zap_before_content', 'qfaqc_content');
+add_action('zap_after_content', 'qfaqc_content');
 
 function qfaqc_content(){
 	?>
